@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registration</title>
+  </head>
+  <body>
+    <form action="/register" method="POST">
+      <fieldset>
+        <legend>ข้อมูลส่วนตัว</legend>
+        <label for="fname">ชื่อจริง:</label>
+        <input type="text" id="fname" name="firstname" required />
+
+        <label for="flast">นาสกุล:</label>
+        <input type="text" id="flast" name="lastname" required />
+        <br />
+        <label for="femail">อีเมล:</label>
+        <input type="text" id="femail" name="emailaddres" required />
+
+        <label for="fbirthday">วันเกิด:</label>
+        <input type="date" id="fbirthday" name="birthday" required />
+
+        <fieldset>
+          <legend>เพศ:</legend>
+          <input type="radio" id="male" name="เพศชาย" required />
+          <label for="male">ชาย</label>
+
+          <input type="radio" id="female" name="เพศหญิง" required />
+          <label for="female">หญิง</label>
+
+          <input type="radio" id="other" name="เพศอื่น" required />
+          <label for="other">อื่นๆ</label>
+        </fieldset>
+
+        <label for="country">ประเทศ:</label>
+        <select id="country" name="country">
+          <option value="choose country">--เลือกประเทศ--</option>
+        </select>
+        <br />
+
+        <label for="info">ข้อมูลเพิ่มเติม:</label>
+        <br />
+        <textarea id="info" name="info" row="4" cols="50"></textarea>
+        <br />
+        <input type="checkbox" id="terms" name="terms" />
+        <label for="terms">ฉันยอมรับเงื่อนไขการใช้บริการ</label>
+        <br />
+      </fieldset>
+      <button type="submit">ส่งข้อมูล</button>
+      <button type="reset">ยกเลิก</button>
+    </form>
+  </body>
+</html>
