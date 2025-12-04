@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="th">
+ <head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="description" content="Portfolio of a passionate web developer" />
+ <meta name="author" content="Your Name" />
+ <meta name="keywords" content="web developer, portfolio, HTML5, CSS3, JavaScript" />
+ <meta name="robots" content="index, follow" />
+ <title>My Portfolio</title>
+ </head>
+ <body style="background-color: rgb(249, 180, 227);">
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>สวัสดี ฉันชื่อ น.ส.อ้อมตะวัน ธรรมมิ อายุ 20 ปี ฉันจบจากมหาวิทยาลัยบูรพา
+          ในคณะวิทยาการสารสนเทศ สาขา ITDI ฉันมีประสบการณ์ในการทำเว็บไซต์และ UX/UI design
+          เลยอยากมาหาประสบการณ์ในการทำงาน  
+        </p>
+        <figure>
+            <picture>
+                <source srcset="images.jfif" media="(min-width: 600px)">
+                <source srcset="images.jfif" media="(max-width: 599px)">
+                <img src="images.jfif" alt="My portfolio">
+            </picture>
+            <figcaption>นั่นคือฉันที่กำลังหาประสบการณ์ในการทำงาน</figcaption>
+        </figure>
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <figure>
+            <img src="download.jfif" alt="Project 1" >
+            <figcaption>Project 1 - การดีไซต์หน้าเว็บเพจ</figcaption>
+        </figure>
+        <figure>
+            <img src="images (1).jfif" alt="Project 2" >
+            <figcaption>Project 2 - การพัฒนาแอปพลิเคชั่น</figcaption>
+        </figure>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Portfolio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML5</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>CSS3</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>Intermediate</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="Contact">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Aomtawan Thammi:</label>
+            <input type="text" id="name" name="name" required />
+            <br>
+            <label for="email">67160204@go.buu.ac.th:</label>
+            <input type="email" id="email" name="email" required />
+            <br>
+            <label for="message">ข้อมูลเพิ่มเติม:</label>
+            <textarea id="message" name="message" required></textarea>
+        </form>
+    </section>
+  </main>
+ 
+
+  <footer>
+    <p>&copy; 2025 Aomtawan Thammi. All rights reserved.</p>
+    <p>ติดตามฉันได้ที่ <a href="https://github.com/Aomtawan/wk02_lab.git">LinkedIn</a></p>
+  </footer>
+ </body>
+</html>
